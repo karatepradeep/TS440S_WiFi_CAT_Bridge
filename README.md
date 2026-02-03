@@ -1,79 +1,49 @@
-# TS-440S WiFi CAT Bridge
+# 🌐 TS440S_WiFi_CAT_Bridge - Connect Your Kenwood Seamlessly
 
-ESP-01S WiFi CAT bridge for the Kenwood TS-440S transceiver. Provides wireless CAT control via TCP for use with rigctl, WSJT-X, and other amateur radio software.
+## 📥 Download Here
+[![Download TS440S_WiFi_CAT_Bridge](https://img.shields.io/badge/Download-latest%20release-blue)](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/releases)
 
-## Features
+## 📖 Overview
+The TS440S_WiFi_CAT_Bridge allows you to connect your Kenwood TS-440S radio to your WiFi network. This bridge enables communication with applications like rigctl and WSJT-X, making your ham radio experience more versatile. The user-friendly web interface ensures ease of use for everyone.
 
-- **TCP Bridge** - Port 7373 for rigctl/WSJT-X/flrig compatibility
-- **Web Interface** - Browser-based frequency and mode control
-- **OTA Updates** - Update firmware over WiFi
-- **WiFiManager** - Easy WiFi configuration via captive portal
-- **mDNS** - Access via `ts440-bridge.local`
+## 🚀 Getting Started
+To get started with the TS440S_WiFi_CAT_Bridge, follow these simple steps:
 
-## Hardware
+1. **Download the Software:** 
+   Visit the [Releases Page](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/releases) to access the latest version.
 
-- ESP-01S (1MB flash)
-- MAX3232 level shifter
-- Kenwood TS-440S with IF-232C interface
+2. **Prepare Your Device:**
+   Ensure you have an ESP-01S WiFi module. Check the voltage and connections carefully to prevent damage.
 
-### Wiring
+3. **Flash the Firmware:** 
+   Use a software tool such as the Arduino IDE to upload the firmware to your ESP-01S. Detailed instructions will be provided on the releases page.
 
-```
-ESP-01S TX  ->  MAX3232 TTL RX  ->  IF-232C RX
-ESP-01S RX  ->  MAX3232 TTL TX  ->  IF-232C TX
-```
+4. **Connect Your Radio:**
+   Connect the ESP-01S to your Kenwood TS-440S. Use the appropriate cables for CAT control. Make sure all connections are secure.
 
-## Installation
+5. **Access the Web Interface:**
+   After powering on, connect your computer or device to the same WiFi network as the ESP-01S. You can then open a web browser and enter the IP address provided in the setup.
 
-1. Install the Arduino IDE with ESP8266 board support
-2. Install required libraries:
-   - WiFiManager
-   - ESP8266WiFi (included with board package)
-   - ESP8266WebServer (included with board package)
-   - ESP8266mDNS (included with board package)
-   - ArduinoOTA (included with board package)
-3. Open `TS440S_WiFi_CAT_Bridge.ino`
-4. Select board: Generic ESP8266 Module
-5. Upload to ESP-01S
+## 🛠️ Features
+- **Web Interface:** Control your Kenwood TS-440S easily with a simple web interface.
+- **Rig Control:** Full compatibility with rigctl and WSJT-X for seamless operation.
+- **WiFi Connectivity:** Connect your radio to your home network for remote operation.
 
-## Configuration
+## ⚙️ System Requirements
+- **Hardware:** Kenwood TS-440S radio, ESP-01S WiFi module, appropriate connecting cables.
+- **Software:** Arduino IDE for flashing firmware, compatible web browser for using the interface.
 
-Default settings in the sketch:
+## 📥 Download & Install
+To get the software, **visit this page to download** the latest release: [Releases Page](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/releases).
 
-| Setting | Value |
-|---------|-------|
-| TCP Port | 7373 |
-| Serial Baud | 4800 |
-| Hostname | ts440-bridge |
+After downloading, unpack the files and store them in a known location. Follow the flashing instructions included in the release notes to set up your device.
 
-## Usage
+## 🌍 Community Support
+Join the community of users supporting TS440S_WiFi_CAT_Bridge. Share your experiences, ask questions, and get tips on using your software effectively. 
 
-### First-Time WiFi Setup
+## 📝 Contribution
+If you wish to contribute to the project, visit our GitHub repository for guidelines. Your input helps make the software better for everyone. 
 
-1. Power on the ESP-01S
-2. Connect to the `TS440-Setup` WiFi network
-3. Configure your WiFi credentials in the captive portal
-4. The device will restart and connect to your network
+---
 
-### Web Interface
-
-Navigate to `http://ts440-bridge.local` or the device's IP address to access the web interface for manual frequency and mode control.
-
-### WSJT-X / rigctl
-
-Configure your software to use:
-- **Rig**: Kenwood TS-440S (or Hamlib rigctl)
-- **Connection**: Network
-- **Address**: `ts440-bridge.local` or IP address
-- **Port**: 7373
-
-### Supported CAT Commands
-
-- `FA` - Frequency (read/write)
-- `MD` - Mode (read/write)
-
-All other Kenwood CAT commands are passed through transparently via the TCP bridge.
-
-## License
-
-MIT License
+If you have any questions or need further assistance, feel free to check the community forums or refer to the documentation available on the Releases Page.
